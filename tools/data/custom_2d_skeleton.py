@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import argparse
 import copy as cp
-import decord
 import mmcv
 import numpy as np
 import os
@@ -9,6 +8,7 @@ import os.path as osp
 import torch.distributed as dist
 from mmcv.runner import get_dist_info, init_dist
 from tqdm import tqdm
+import decord
 
 import pyskl  # noqa: F401
 from pyskl.smp import mrlines

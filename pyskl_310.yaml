@@ -73,6 +73,7 @@ dependencies:
   - zlib>=1.2.11
   - zstd>=1.5.2
   - pip:
+    - --find-links https://download.openmmlab.com/mmcv/dist/cu113/torch1.12.0/index.html
     - addict==2.4.0
     - backcall==0.2.0
     - chardet==5.1.0

@@ -1,7 +1,7 @@
 from pathlib import Path
 
 # 動画フォルダ（ユーザ環境）
-video_dir = Path('/home/denjo/univ/AI_excersize/自由課題/movie/側転斜状')
+video_dir = Path('../movie/側転斜状')
 out_list = Path('examples/extract_sideflip_skeleton/sideflip.list')
 
 video_dir.mkdir(parents=False, exist_ok=True)  # 存在確認用（無ければエラー回避）

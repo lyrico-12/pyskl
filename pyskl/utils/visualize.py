@@ -127,6 +127,12 @@ def Vis2DPose(item, thre=0.2, out_shape=(540, 960), layout='coco', fps=24, video
         frames = [np.ones([out_shape[0], out_shape[1], 3], dtype=np.uint8) * 255 for i in range(total_frames)]
     else:
         frames = load_frames(video)
+        # Adjust total_frames to match the actual number of frames in the video
+        if len(frames) != total_frames:
+            # print(f'Warning: total_frames ({total_frames}) does not match video frames ({len(frames)}). Using min value.')
+            total_frames = min(total_frames, len(frames))
+            frames = frames[:total_frames]
+        
         if out_shape is None:
             out_shape = frames[0].shape[:2]
 

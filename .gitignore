@@ -1,3 +1,5 @@
+examples/extract_skeleton/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
